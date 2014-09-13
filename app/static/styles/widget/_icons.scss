@@ -1,0 +1,37 @@
+@import '../sass/retina-sprite-mixin';
+
+$icon-retina: sprite-map("icons/*.png");
+
+.icon-logo{
+	@include retina-sprite-background(logo,$icon-retina);
+	display: inline-block;
+}
+.icon-textlogo{
+	@include retina-sprite-background(textlogo,$icon-retina);
+	display: inline-block;
+}
+.icon-arrow-left{
+ 	@include retina-sprite-background(arrow-left,$icon-retina);
+	display: inline-block;
+}
+.icon-shop{
+	@include retina-sprite-background(shop,$icon-retina);
+	display: inline-block;
+}
+.icon-life{
+	@include retina-sprite-background(life,$icon-retina);
+	display: inline-block;
+}
+.icon-award{
+	@include retina-sprite-background(award,$icon-retina);
+	display: inline-block;
+}
+.icon-neighbour{
+	@include retina-sprite-background(neighbour,$icon-retina);
+	display: inline-block;
+}
+
+
+
+
+
