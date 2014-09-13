@@ -269,7 +269,7 @@
 	<% for(var i=0;i<list.length;i++){ %>
 	<li>
 		<a href="/community/activity/detail?aid=<%=list[i].aid%>" class="clearfix">
-			<img src="<%=list[i].img%>" class="img">
+			<img src="<%=list[i].abbrimg%>" class="img">
 			<div class="info">
 				<p class="title"><%=list[i].title%></p>
 				<p class="date"><%=list[i].lastTime%></p>
