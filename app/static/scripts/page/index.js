@@ -41,5 +41,14 @@
 			quickcontentList.filter('.on').removeClass('on');
 			selectContent.addClass('on')
 		});
+
+		new ScrollLoad({
+	        container : $('#activity-list'),
+	        loading: $('.m-loading'),
+	        template : 'activity_template',
+	        url : '/community/activity/list',
+	        rn : 5
+	    });
+
 		
 	});

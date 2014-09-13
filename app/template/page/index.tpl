@@ -15,8 +15,7 @@
 {%block name="header"%}
 	<header class="header" id="header">
 		<div class="logo">
-			<span class="logo-wrapper"><i class="icon-logo"></i></span>
-			<span class="icon-textlogo"></span>
+			北苑家园望春园
 		</div>
 		<span class="icon-user"></span>
 	</header>
@@ -258,11 +257,48 @@
 	</ul>
 
 	<div class="activity">
-		<img src="/static/community/images/activity.jpg"></img>
+		<h2>社区活动</h2>
+		<ul id="activity-list"></ul>
+		<p class="m-loading">正在加载更多</p>
 	</div>
 {%/block%}
 
 {%block name="js"%}
+<script id="activity_template" type="text/html">
+
+	<% for(var i=0;i<list.length;i++){ %>
+	<li>
+		<a href="/community/activity/detail?aid=<%=list[i].aid%>" class="clearfix">
+			<img src="<%=list[i].img%>" class="img">
+			<div class="info">
+				<p class="title"><%=list[i].title%></p>
+				<p class="date"><%=list[i].lastTime%></p>
+				<div class="opt">
+					<% if(list[i].isLike){ %>
+						<span class="opt-btn done">
+					<% }else{ %>
+						<span class="opt-btn">
+					<% } %>
+					<i><%=list[i].likeCount%></i>人喜欢</span>
+					<% if(list[i].isJoin){ %>
+						<span class="opt-btn done">
+					<% }else{ %>
+						<span class="opt-btn">
+					<% } %>
+					<i><%=list[i].joinCount%></i>人参加</span>
+				</div>
+			</div>
+		</a>
+	</li>
+	<% } %>
+	
+</script>
+<!-- build:js /static/community/scripts/base/baiduTemplate.js -->
+<script src="static/scripts/base/baiduTemplate.js"></script>
+<!-- endbuild -->
+<!-- build:js /static/community/scripts/widget/scrollLoad.js -->
+<script src="static/scripts/widget/scrollLoad.js"></script>
+<!-- endbuild -->
 <!-- build:js /static/community/scripts/base/swipe.js -->
 <script src="static/scripts/base/swipe.js"></script>
 <!-- endbuild -->

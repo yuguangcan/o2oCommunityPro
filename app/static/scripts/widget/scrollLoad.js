@@ -5,7 +5,7 @@ function ScrollLoad(options){
     this.loading = options.loading;
     this.pn = 0;
     this.rn = options.rn || 3;
-    this.data = options.data;
+    this.data = options.data || {};
     var _self = this;
     this.loadHandel = function(){
         var reachBottom = document.body.scrollTop + window.innerHeight >= $(document).height() - 200;
@@ -19,8 +19,11 @@ function ScrollLoad(options){
 
 ScrollLoad.prototype.loadData = function(){
     var _self = this;
-    var loadurl = _self.url + '?pn=' + _self.pn + '&rn=' + _self.rn + (_self.data?('&' + _self.data):'');
-    $.get(loadurl, function(data) {
+    var param = $.param($.extend({
+        pn : _self.pn,
+        rn : _self.rn
+    },_self.data));
+    $.get(_self.url + '?' + param, function(data) {
         
         if(data.data.hasMore){
             _self.pn = _self.pn + _self.rn;

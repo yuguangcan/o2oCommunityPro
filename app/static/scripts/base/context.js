@@ -20,6 +20,3 @@
     'F' in window || (window.F = F);
 })();
 
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    WeixinJSBridge.call('hideOptionMenu');
-});

@@ -22,7 +22,9 @@ $(function(){
             loading: $('.m-loading'),
             template : 'pay_template',
             url : '/community/payment/list',
-            data : 'type='+item.data('type')
+            data : {
+            	type : item.data('type')
+            }
         });
 	});
 	navList.eq(0).trigger('click');

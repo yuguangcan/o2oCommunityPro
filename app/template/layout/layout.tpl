@@ -46,5 +46,12 @@
         {%block name="js"%}
         {%/block%}
 
+        {%block name="hideweixinmenu"%}
+            <script type="text/javascript">
+                document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                    WeixinJSBridge.call('hideOptionMenu');
+                });
+            </script>
+        {%/block%}
     </body>
 </html>
