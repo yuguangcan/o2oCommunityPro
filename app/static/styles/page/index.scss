@@ -98,8 +98,21 @@
                 font-size: 14px;
                 background: #fff;
                 text-align: center;
+                position: relative;
                 a{
                     color: #333;
+                }
+                i{
+                    position: absolute;
+                    top: 2px;
+                    right: 7px;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 12px;
+                    background: #ffac61;
                 }
                 &:last-child{
                     border-right:1px solid #e8e8e8;

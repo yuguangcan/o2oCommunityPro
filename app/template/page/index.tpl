@@ -56,20 +56,35 @@
 			<tr>
 				<td>
 					<a href="/community/payment/listview">物业缴费</a>
+					{%if $data.remind.payment%}
+						<i class="notice">{%$data.remind.payment%}<i>
+					{%/if%}
 				</td>
 				<td>
 					<a href="/community/package/package">包裹代收</a>
+					{%if $data.remind.package%}
+						<i class="notice">{%$data.remind.package%}<i>
+					{%/if%}
 				</td>
 				<td>
 					<a href="/community/visitor/visitor">访客预约</a>
+					{%if $data.remind.visitor%}
+						<i class="notice">{%$data.remind.visitor%}<i>
+					{%/if%}
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<a href="/community/repair/listview">物业报修</a>
+					{%if $data.remind.repair%}
+						<i class="notice">{%$data.remind.repair%}<i>
+					{%/if%}
 				</td>
 				<td>
 					<a href="/community/complain/listview">投诉建议</a>
+					{%if $data.remind.complain%}
+						<i class="notice">{%$data.remind.complain%}<i>
+					{%/if%}
 				</td>
 				<td>
 					<a href="/community/tel/listview">便民电话</a>
