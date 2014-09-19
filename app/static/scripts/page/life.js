@@ -20,7 +20,7 @@ $(function(){
         var scroll = new ScrollLoad({
             container : contentList,
             loading: $('.m-loading'),
-            template : 'life_template',
+            template : 'shop_template',
             url : '/community/payment/list',
             data : {
                 type : item.data('type')

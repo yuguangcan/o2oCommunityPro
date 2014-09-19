@@ -28,7 +28,7 @@
     </nav>
 
     <section class="life-content">
-        <a href="###" class="life-wrapper clearfix">
+        <a href="###" class="shop-wrapper clearfix">
             <img src="" class="img">
             <div class="info">
                 <p class="title">海底捞</p>
@@ -49,7 +49,7 @@
 {%/block%}
 
 {%block name="js"%}
-<script id="life_template" type="text/html">
+<script id="shop_template" type="text/html">
 
     <% for(var i=0;i<list.length;i++){ %>
     <div class="life-wrapper">

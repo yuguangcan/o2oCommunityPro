@@ -1,0 +1,88 @@
+.shop-wrapper{
+    background: #fff;
+    display: block;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e3e3e3;
+    .img{
+        display: block;
+        float: left;
+        width: 75px;
+        height: 75px;
+        -webkit-border-radius:3px 3px;
+        border-radius: 3px 3px;
+    }
+    .info{
+        margin-left: 85px;
+        height: 75px;
+        position: relative;
+        .title{
+            color: #333;
+            font-size: 18px;
+        }
+        .price{
+            height: 22px;
+            line-height: 22px;
+            margin: 7px 0;
+            span{
+                color: #999;
+                font-size: 14px;
+            }
+            .discount{
+                float: right;
+                i{
+                    width: 22px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-align: center;
+                    display: inline-block;
+                    -webkit-border-radius:22px;
+                    border-radius: 22px;
+                    color: #fff;
+                    font-size: 14px;
+                    &.zhe{
+                        background: #ff850e;
+                    }
+                    &.song{
+                        background: #70d32a;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        .detail{
+            color: #999;
+            font-size: 14px;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+        }
+    }
+}
+.address{
+    background: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 16px;
+    color: #333;
+}
+.tel{
+    background: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 16px;
+    color: #333;
+}
+.des{
+    padding: 10px 10px;
+    h2{
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    p{
+        color: #999;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+}

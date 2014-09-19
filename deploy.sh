@@ -2,8 +2,8 @@
 #地址
 
 
-cp -r dist/static/*  /Users/yuguangcan/webserver/php/static/
-cp -r dist/template/*  /Users/yuguangcan/webserver/php/community/templates/
+#cp -r dist/static/*  /Users/yuguangcan/webserver/php/static/
+#cp -r dist/template/*  /Users/yuguangcan/webserver/php/community/templates/
 
 
 
