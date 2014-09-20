@@ -109,10 +109,13 @@
                     width: 15px;
                     height: 15px;
                     line-height: 15px;
+                    -webkit-border-radius:15px;
+                    border-radius: 15px;
                     text-align: center;
                     color: #fff;
                     font-size: 12px;
                     background: #ffac61;
+                    font-style: normal;
                 }
                 &:last-child{
                     border-right:1px solid #e8e8e8;
