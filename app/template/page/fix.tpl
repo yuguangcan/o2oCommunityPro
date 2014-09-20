@@ -21,6 +21,7 @@
 	<section class="submit" id="submit">
 		<div class="m-select">
 			<span class="arrow"></span>
+			<div class="info">请选择保修项目</div>
 			<select id="type">
 				<option value="0">请选择保修项目</option>
 				<option value="2">消防系统</option>
@@ -48,6 +49,9 @@
 {%/block%}
 
 {%block name="js"%}
+<!-- build:js /static/community/scripts/widget/customSelect.js -->
+<script src="static/scripts/widget/customSelect.js"></script>
+<!-- endbuild -->
 <!-- build:js /static/community/scripts/page/fix.js -->
 <script src="static/scripts/page/fix.js"></script>
 <!-- endbuild -->

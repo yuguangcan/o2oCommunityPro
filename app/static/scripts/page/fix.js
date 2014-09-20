@@ -16,4 +16,5 @@ $(function(){
 			}
 		});
 	});
+	new CustomSelect($('.m-select'));
 });

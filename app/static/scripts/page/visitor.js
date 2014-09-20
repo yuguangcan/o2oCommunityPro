@@ -20,5 +20,7 @@ $(function(){
 			}
 		});
 	});
+	new CustomSelect($('#dateselect'));
+	new CustomSelect($('#countselect'));
 });
 

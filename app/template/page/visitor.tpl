@@ -19,14 +19,16 @@
 
 {%block name="content"%}
 	<section class="submit" id="submit">
-		<div class="m-select">
+		<div class="m-select" id="dateselect">
 			<span class="notice">时间</span>
 			<span class="arrow"></span>
+			<div class="info">请选择时间</div>
 			<input type="date" id="date"></input>
 		</div>
-		<div class="m-select">
+		<div class="m-select" id="countselect">
 			<span class="notice">人数</span>
 			<span class="arrow"></span>
+			<div class="info">请选择人数</div>
 			<select id="count">
 				<option value="1">1人</option>
 				<option value="2">2人</option>
@@ -60,6 +62,9 @@
 {%/block%}
 
 {%block name="js"%}
+<!-- build:js /static/community/scripts/widget/customSelect.js -->
+<script src="static/scripts/widget/customSelect.js"></script>
+<!-- endbuild -->
 <!-- build:js /static/community/scripts/page/visitor.js -->
 <script src="static/scripts/page/visitor.js"></script>
 <!-- endbuild -->
