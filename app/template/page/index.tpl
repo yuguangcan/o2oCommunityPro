@@ -15,7 +15,7 @@
 {%block name="header"%}
 	<header class="header" id="header">
 		<div class="logo">
-			北苑家园望春园
+			博雅国际
 		</div>
 		<span class="icon-user"></span>
 	</header>
@@ -49,6 +49,7 @@
 	</section>
 
 	<section class="wuye">
+		<div class="mask">暂不开放</div>
 		<table>
 			<tr>
 				<th colspan="3">物业服务</th>
@@ -56,35 +57,35 @@
 			<tr>
 				<td>
 					<a href="/community/payment/listview">物业缴费</a>
-					{%if $data.remind.payment%}
+					<!-- {%if $data.remind.payment%}
 						<i class="notice">{%$data.remind.payment%}</i>
-					{%/if%}
+					{%/if%} -->
 				</td>
 				<td>
 					<a href="/community/package/package">包裹代收</a>
-					{%if $data.remind.package%}
+					<!-- {%if $data.remind.package%}
 						<i class="notice">{%$data.remind.package%}</i>
-					{%/if%}
+					{%/if%} -->
 				</td>
 				<td>
 					<a href="/community/visitor/visitor">访客预约</a>
-					{%if $data.remind.visitor%}
+					<!-- {%if $data.remind.visitor%}
 						<i class="notice">{%$data.remind.visitor%}</i>
-					{%/if%}
+					{%/if%} -->
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<a href="/community/repair/listview">物业报修</a>
-					{%if $data.remind.repair%}
+					<!-- {%if $data.remind.repair%}
 						<i class="notice">{%$data.remind.repair%}</i>
-					{%/if%}
+					{%/if%} -->
 				</td>
 				<td>
 					<a href="/community/complain/listview">投诉建议</a>
-					{%if $data.remind.complain%}
+					<!-- {%if $data.remind.complain%}
 						<i class="notice">{%$data.remind.complain%}</i>
-					{%/if%}
+					{%/if%} -->
 				</td>
 				<td>
 					<a href="/community/tel/listview">便民电话</a>
@@ -108,7 +109,7 @@
 			<p class="quick-incon-text">社区生活</p>
 			<span class="quick-arrow life"></span>
 		</div>
-		<div class="quick-wrapper">
+		<!-- <div class="quick-wrapper">
 			<div class="quick-icon-wrapper award">
 				<i class="icon-award"></i>
 			</div>
@@ -121,7 +122,7 @@
 			</div>
 			<p class="quick-incon-text">我的邻居</p>
 			<span class="quick-arrow neighbour"></span>
-		</div>
+		</div> -->
 	</section>
 
 	<ul class="quick-content">
@@ -198,7 +199,7 @@
 				
 			</table>
 		</li>
-		<li>
+		<!-- <li>
 			<table class="award">
 				<tr>
 					<td>
@@ -209,27 +210,6 @@
 					</td>
 					<td>
 						<a href="/">生活用品</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/">母婴专区</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">生鲜专区</a>
-					</td>
-					<td>
-						<a href="/">进口食品</a>
-					</td>
-					<td>
 					</td>
 				</tr>
 			</table>
@@ -247,29 +227,8 @@
 						<a href="/">生活用品</a>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						<a href="/">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/">母婴专区</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">生鲜专区</a>
-					</td>
-					<td>
-						<a href="/">进口食品</a>
-					</td>
-					<td>
-					</td>
-				</tr>
 			</table>
-		</li>
+		</li> -->
 	</ul>
 
 	<div class="activity">

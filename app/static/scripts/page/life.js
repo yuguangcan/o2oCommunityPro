@@ -1,6 +1,7 @@
 
 $(function(){
-    var navList = $('.m-nav li'),
+    var nav = $('.m-nav'),
+        navList = $('.m-nav li'),
         contentList = $('.life-content'),
         scroll;
     navList.click(function(){
@@ -28,8 +29,10 @@ $(function(){
             }
         });
     });
-    var typeId = getQueryStringByName('typeId');
-    navList.filter('[data-type="'+typeId+'"]').trigger('click');
+    var typeId = getQueryStringByName('typeId'),
+        selectedNav = navList.filter('[data-type="'+typeId+'"]');
+    selectedNav.trigger('click');
+    nav.scrollLeft(selectedNav.position().left);
 
     function getQueryStringByName(name){
         var result = location.search.match(new RegExp('[\?\&]' + name+ '=([^\&]+)','i'));
