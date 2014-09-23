@@ -31,7 +31,7 @@ ScrollLoad.prototype.loadData = function(){
             _self.loading.show();
         }else{
             $(document).off('scroll', _self.loadHandel);
-            _self.loading.remove();
+            _self.loading.hide();
             
         }
         var content = baidu.template(_self.template, {list: data.data.list});
@@ -41,7 +41,7 @@ ScrollLoad.prototype.loadData = function(){
 ScrollLoad.prototype.init = function(){
     this.loadData();
 }
-ScrollLoad.prototype.rest = function(){
+ScrollLoad.prototype.reset = function(){
     if(this.loadHandel){
         $(document).off('scroll', this.loadHandel);
     }

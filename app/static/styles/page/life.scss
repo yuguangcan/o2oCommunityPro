@@ -1,5 +1,5 @@
-.shop-content{
-    a{
+.life-content{
+    .shop-wrapper{
         display: block;
         padding: 10px 10px;
         border-bottom: 1px solid #e3e3e3;
@@ -39,6 +39,7 @@
                         border-radius: 22px;
                         color: #fff;
                         font-size: 14px;
+                        font-style: normal;
                         &.zhe{
                             background: #ff850e;
                         }

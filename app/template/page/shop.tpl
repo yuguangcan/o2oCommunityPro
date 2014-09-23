@@ -19,26 +19,30 @@
 
 {%block name="content"%}
     <div class="shop-wrapper clearfix">
-        <img src="" class="img">
+        <img src="{%$data.detail.img%}" class="img">
         <div class="info">
-            <p class="title">海底捞</p>
+            <p class="title">{%$data.detail.title%}</p>
             <div class="price">
-                <span>人均 ￥86</span>
+                <span>人均 ￥{%$data.detail.cost%}</span>
                 <div class="discount">
+                    {%if $data.detail.isDiscount%}
                     <i class="zhe">折</i>
+                    {%/if%}
+                    {%if $data.detail.isGift%}
                     <i class="song">送</i>
+                    {%/if%}
                 </div>
             </div>
             <p class="detail">
-                环境4.5 口味5 服务4
+                环境{%$data.detail.environment%} 口味{%$data.detail.taste%} 服务{%$data.detail.service%}
             </p>
         </div>
     </div>
-    <div class="address">西门往南300米，马路东侧，建行旁边100米处</div>
-    <div class="tel">TEL:<a href="tel:01082398484">010-82398484</a></div>
+    <div class="address">{%$data.detail.address%}</div>
+    <div class="tel">TEL:<a href="tel:{%$data.detail.phone%}">{%$data.detail.phone%}</a></div>
     <div class="des">
-        <h2>推荐菜式：</h2>
-        <p>深刻的房价快速将东方科技SD卡房价快速的减肥</p>
+        <h2>推荐理由：</h2>
+        <p>{%$data.detail.detail%}</p>
     </div>
 {%/block%}
 

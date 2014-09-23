@@ -1,7 +1,8 @@
 
 $(function(){
 	var navList = $('.m-nav li'),
-		contentList = $('.pay-content');
+		contentList = $('.pay-content'),
+		scroll;
 	navList.click(function(){
 		var item = $(this);
 		if(item.hasClass('on')){
@@ -17,7 +18,7 @@ $(function(){
 			scroll.reset();
 		}
 
-		var scroll = new ScrollLoad({
+		scroll = new ScrollLoad({
             container : contentList,
             loading: $('.m-loading'),
             template : 'pay_template',

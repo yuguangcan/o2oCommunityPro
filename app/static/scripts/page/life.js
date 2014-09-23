@@ -1,7 +1,8 @@
 
 $(function(){
     var navList = $('.m-nav li'),
-        contentList = $('.life-content');
+        contentList = $('.life-content'),
+        scroll;
     navList.click(function(){
         var item = $(this);
         if(item.hasClass('on')){
@@ -17,15 +18,24 @@ $(function(){
             scroll.reset();
         }
 
-        var scroll = new ScrollLoad({
+        scroll = new ScrollLoad({
             container : contentList,
             loading: $('.m-loading'),
             template : 'shop_template',
-            url : '/community/payment/list',
+            url : '/community/local/list',
             data : {
-                type : item.data('type')
+                typeId : item.data('type')
             }
         });
     });
-    //navList.eq(0).trigger('click');
+    var typeId = getQueryStringByName('typeId');
+    navList.filter('[data-type="'+typeId+'"]').trigger('click');
+
+    function getQueryStringByName(name){
+        var result = location.search.match(new RegExp('[\?\&]' + name+ '=([^\&]+)','i'));
+        if(result == null || result.length < 1){
+            return '';
+        }
+        return result[1];
+    }
 });

@@ -20,31 +20,13 @@
 {%block name="content"%}
     <nav class="m-nav">
         <ul>
-            <li class="on">附近美食</li>
-            <li>家政保洁</li>
-            <li>交通出行</li>
-            <li>健身运动</li>
+            {%foreach $data.types as $item%}
+            <li data-type="{%$item.typeId%}">{%$item.typeName%}</li>
+            {%/foreach%}
         </ul>
     </nav>
 
-    <section class="life-content">
-        <a href="###" class="shop-wrapper clearfix">
-            <img src="" class="img">
-            <div class="info">
-                <p class="title">海底捞</p>
-                <div class="price">
-                    <span>人均 ￥86</span>
-                    <div class="discount">
-                        <i class="zhe">折</i>
-                        <i class="song">送</i>
-                    </div>
-                </div>
-                <p class="detail">
-                    好吃不贵，真是好吃啊哈哈哈哈哈，来一个啊啊啊啊啊啊
-                </p>
-            </div>
-        </a>
-    </section>
+    <section class="life-content"></section>
     <p class="m-loading">正在加载更多</p>
 {%/block%}
 
@@ -52,21 +34,26 @@
 <script id="shop_template" type="text/html">
 
     <% for(var i=0;i<list.length;i++){ %>
-    <div class="life-wrapper">
-        <div class="m-box">
-            <h3><%=list[i].title%></h3>
-            <p><%=list[i].content%></p>
-        </div>
-        <div class="pay-info">
-            <% if(list[i].area){ %>
-            <span>单价<%=list[i].area%>元/m<sup>2</sup></span>
-            <% } %>
-            <span>总价<b><%=list[i].price%>元</b></span>
-            <!--
-            <a href="javascript:;" class="m-submit">缴费</a>
-            -->
-        </div>
-    </div>
+        <a href="/community/local/detail?id=<%=list[i].id%>" class="shop-wrapper clearfix">
+            <img src="<%=list[i].img%>" class="img">
+            <div class="info">
+                <p class="title"><%=list[i].title%></p>
+                <div class="price">
+                    <span>人均 ￥<%=list[i].cost%></span>
+                    <div class="discount">
+                        <% if(list[i].isDiscount) { %>
+                        <i class="zhe">折</i>
+                        <% } %>
+                        <% if(list[i].isGift) { %>
+                        <i class="song">送</i>
+                        <% } %>
+                    </div>
+                </div>
+                <p class="detail">
+                    <%=list[i].address%>
+                </p>
+            </div>
+        </a>
     <% } %>
     
 </script>

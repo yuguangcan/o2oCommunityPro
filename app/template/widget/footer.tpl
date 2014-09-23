@@ -13,5 +13,5 @@
             <a href="/community/repair/listview">反馈</a>
         </li>
     </ul>
-    <div>&copy;{%date('Y')%}&nbsp;掌心科技</div>
+    <div>&copy;{%date('Y')%}&nbsp;领结科技</div>
 </footer>

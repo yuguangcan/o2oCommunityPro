@@ -163,38 +163,39 @@
 		</li>
 		<li>
 			<table class="life">
-				<tr>
-					<td>
-						<a href="/">食品</a>
-					</td>
-					<td>
-						<a href="/">饮品</a>
-					</td>
-					<td>
-						<a href="/">生活用品</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/">母婴专区</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">生鲜专区</a>
-					</td>
-					<td>
-						<a href="/">进口食品</a>
-					</td>
-					<td>
-					</td>
-				</tr>
+				
+
+				{%if $data.lifeTypes|count > 0%}
+					{%assign var=types1 value=$data.lifeTypes|array_slice:0:3%}
+					<tr>
+						{%foreach $types1 as $type%}
+						<td>
+							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
+						</td>
+						{%/foreach%}
+					</tr>
+				{%/if%}
+				{%if $data.lifeTypes|count > 3%}
+					{%assign var=types2 value=$data.lifeTypes|array_slice:3:3%}
+					<tr>
+						{%foreach $types2 as $type%}
+						<td>
+							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
+						</td>
+						{%/foreach%}
+					</tr>
+				{%/if%}
+				{%if $data.lifeTypes|count > 6%}
+					{%assign var=types3 value=$data.lifeTypes|array_slice:6:3%}
+					<tr>
+						{%foreach $types3 as $type%}
+						<td>
+							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
+						</td>
+						{%/foreach%}
+					</tr>
+				{%/if%}
+				
 			</table>
 		</li>
 		<li>
