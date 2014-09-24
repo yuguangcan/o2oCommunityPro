@@ -130,32 +130,31 @@
 			<table class="shop">
 				<tr>
 					<td>
-						<a href="/shop/home">食品</a>
+						<a href="/shop/home?code={%$params.code%}&type=食品">食品</a>
 					</td>
 					<td>
-						<a href="/shop/home">饮品</a>
+						<a href="/shop/home?code={%$params.code%}&type=饮品">饮品</a>
 					</td>
 					<td>
-						<a href="/shop/home">生活用品</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/shop/home">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/shop/home">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/shop/home">母婴专区</a>
+						<a href="/shop/home?code={%$params.code%}&type=生活用品">生活用品</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="/shop/home">生鲜专区</a>
+						<a href="/shop/home?code={%$params.code%}&type=新鲜水果">新鲜水果</a>
 					</td>
 					<td>
-						<a href="/shop/home">进口食品</a>
+						<a href="/shop/home?code={%$params.code%}&type=永生鲜花">永生鲜花</a>
+					</td>
+					<td>
+						<a href="/shop/home?code={%$params.code%}&type=母婴专区">母婴专区</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="/shop/home?code={%$params.code%}&type=生鲜专区">生鲜专区</a>
+					</td>
+					<td>
 					</td>
 					<td>
 					</td>
