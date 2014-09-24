@@ -14,10 +14,11 @@
 
 {%block name="header"%}
 	<header class="header" id="header">
-		<div class="logo">
+		<div class="logo icon-logo"></div>
+		<div class="info">
 			博雅国际
+			<img src="{%$userInfo.img%}" class="avatar">
 		</div>
-		<span class="icon-user"></span>
 	</header>
 {%/block%}
 
@@ -40,20 +41,20 @@
                 {%/foreach%}
 	        </ul>
 	    </div>
+
 	    <ul id="slider-position" class="public-list-pointer">
-        	<li class="on"></li>
-        	<li></li>
-        	<li></li>
+	    	{%foreach $data.announce as $item%}
+        	<li class="{%if $item@index == 0%}on{%/if%}"></li>
+        	{%/foreach%}
         </ul>
 
 	</section>
 
+	<h2 class="section-title">物业服务</h2>
+
 	<section class="wuye">
-		<div class="mask">暂不开放</div>
+		<div class="mask">物业准备中，敬请期待</div>
 		<table>
-			<tr>
-				<th colspan="3">物业服务</th>
-			</tr>
 			<tr>
 				<td>
 					<a href="/community/payment/listview">物业缴费</a>
@@ -230,8 +231,9 @@
 		</li> -->
 	</ul>
 
+	<h2 class="section-title">社区活动</h2>
+
 	<div class="activity">
-		<h2>社区活动</h2>
 		<ul id="activity-list"></ul>
 		<p class="m-loading">正在加载更多</p>
 	</div>

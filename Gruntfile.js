@@ -225,7 +225,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'concurrent:dist',
+        'compass',
         'copy:dist',
         'useminPrepare',        
         'concat',
@@ -237,7 +237,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('debug', [
         'clean:dist',
-        'concurrent:dist',
+        'compass',
         'copy:dist',
         'useminPrepare',  
         'copy:tmp',
