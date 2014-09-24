@@ -131,29 +131,29 @@
 			<table class="shop">
 				<tr>
 					<td>
-						<a href="/shop/home?code={%$params.code%}&type=食品">食品</a>
+						<a href="/shop/home?type=101010">食品</a>
 					</td>
 					<td>
-						<a href="/shop/home?code={%$params.code%}&type=饮品">饮品</a>
+						<a href="/shop/home?type=111010">饮品</a>
 					</td>
 					<td>
-						<a href="/shop/home?code={%$params.code%}&type=生活用品">生活用品</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/shop/home?code={%$params.code%}&type=新鲜水果">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/shop/home?code={%$params.code%}&type=永生鲜花">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/shop/home?code={%$params.code%}&type=母婴专区">母婴专区</a>
+						<a href="/shop/home?type=121010">生活用品</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="/shop/home?code={%$params.code%}&type=生鲜专区">生鲜专区</a>
+						<a href="/shop/home?type=141010">水果生鲜</a>
+					</td>
+					<td>
+						<a href="/shop/home?type=151010">创意办公</a>
+					</td>
+					<td>
+						<a href="/shop/home?type=171010">母婴宠物</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="/shop/home?type=251010">活动专区</a>
 					</td>
 					<td>
 					</td>
