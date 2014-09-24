@@ -24,6 +24,7 @@ $(function(){
             loading: $('.m-loading'),
             template : 'shop_template',
             url : '/community/local/list',
+            rn : 10,
             data : {
                 typeId : item.data('type')
             }
