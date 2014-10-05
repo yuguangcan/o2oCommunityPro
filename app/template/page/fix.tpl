@@ -21,13 +21,12 @@
 	<section class="submit" id="submit">
 		<div class="m-select">
 			<span class="arrow"></span>
-			<div class="info">请选择保修项目</div>
+			<div class="info">请选择报修项目</div>
 			<select id="type">
-				<option value="0">请选择保修项目</option>
-				<option value="2">消防系统</option>
-				<option value="3">电梯系统</option>
-				<option value="4">空调系统</option>
-				<option value="5">供暖系统</option>
+				<option value="-1">请选择报修项目</option>
+				{%foreach $data.project as $item%}
+					<option value="{%$item.id%}">{%$item.content%}</option>
+				{%/foreach%}
 			</select>
 		</div>
 		<div class="m-textarea">
