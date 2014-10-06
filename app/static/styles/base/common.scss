@@ -109,6 +109,17 @@ html,a,input,textarea,.notapcolor{
 	display: block;
 	text-align: center;
 	font-size: 14px;
+	&.disabled{
+		background: #f2f2f2;
+		border-color: #f2f2f2;
+		color: #999;
+		&:hover{
+			background: #f2f2f2;
+		}
+	}
+	&:hover{
+		background:#FF6600;
+	}
 }
 .m-cancel{
 	background: #fff;
@@ -121,6 +132,9 @@ html,a,input,textarea,.notapcolor{
 	display: block;
 	text-align: center;
 	font-size: 14px;
+	&:hover{
+		background:#ddd;
+	}
 }
 .m-select{
 	border-bottom: 1px solid #61c1f1;

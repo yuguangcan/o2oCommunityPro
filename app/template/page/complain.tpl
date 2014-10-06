@@ -24,7 +24,7 @@
 		</div>
 		<div class="operation clearfix">
 			<a href="javascript:;" class="m-cancel">电话</a>
-			<a href="javascript:;" class="m-submit" id="submit-complain">提交</a>
+			<a href="javascript:;" class="m-submit disabled" id="submit-complain">提交</a>
 		</div>
 	</section>
 	<section class="result" id="result">

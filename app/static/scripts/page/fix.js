@@ -3,6 +3,9 @@ $(function(){
 	var type = $('#type'),
 		other = $('#other');
 	$('#submit-fix').click(function(){
+		if($(this).hasClass('disabled')){
+			return;
+		}
 		var typeId = type.val();
 		if(typeId == -1){
 			alert('请选择报修项目');
@@ -20,5 +23,12 @@ $(function(){
 			}
 		});
 	});
+	type.on('change',function(){
+		if(type.val() == -1){
+			$('#submit-fix').addClass('disabled');
+		}else{
+			$('#submit-fix').removeClass('disabled');
+		}
+	})
 	new CustomSelect($('.m-select'));
 });

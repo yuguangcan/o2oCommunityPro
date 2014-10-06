@@ -53,7 +53,7 @@
 	<h2 class="section-title">物业服务</h2>
 
 	<section class="wuye">
-		<div class="mask">物业准备中，敬请期待</div>
+		<!-- <div class="mask">物业准备中，敬请期待</div> -->
 		<table>
 			<tr>
 				<td>
@@ -174,6 +174,10 @@
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
 						{%/foreach%}
+						{%$left1=4-$types1|count%}
+						{%foreach $left1 as $item%}
+							<td></td>
+						{%/foreach%}
 					</tr>
 				{%/if%}
 				{%if $data.lifeTypes|count > 3%}
@@ -184,6 +188,10 @@
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
 						{%/foreach%}
+						{%$left2=4-$types2|count%}
+						{%foreach $left2 as $item%}
+							<td></td>
+						{%/foreach%}
 					</tr>
 				{%/if%}
 				{%if $data.lifeTypes|count > 6%}
@@ -193,6 +201,10 @@
 						<td>
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
+						{%/foreach%}
+						{%$left3=4-$types3|count%}
+						{%foreach $left3 as $item%}
+							<td></td>
 						{%/foreach%}
 					</tr>
 				{%/if%}

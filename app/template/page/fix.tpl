@@ -23,7 +23,6 @@
 			<span class="arrow"></span>
 			<div class="info">请选择报修项目</div>
 			<select id="type">
-				<option value="-1">请选择报修项目</option>
 				{%foreach $data.project as $item%}
 					<option value="{%$item.id%}">{%$item.content%}</option>
 				{%/foreach%}
@@ -32,7 +31,7 @@
 		<div class="m-textarea">
 			<textarea placeholder="备注（选填）" id="other"></textarea>
 		</div>
-		<a href="javascript:;" class="m-submit" id="submit-fix">提交</a>
+		<a href="javascript:;" class="m-submit disabled" id="submit-fix">提交</a>
 	</section>
 	<section class="result" id="result">
 		<div class="m-result">

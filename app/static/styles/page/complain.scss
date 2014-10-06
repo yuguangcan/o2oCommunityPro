@@ -2,15 +2,14 @@
 	margin: 12px 15px;
 }
 .operation{
-	margin: 12px 15px;
+	margin: 12px auto;
+	text-align: center;
 	a{
 		width: 134px;
+		display: inline-block;
 	}
 	.m-cancel{
-		float: left;
-	}
-	.m-submit{
-		float: right;
+		margin-right: 15px;
 	}
 }
 .result{

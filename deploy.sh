@@ -9,7 +9,7 @@
 domain2="o2o@112.126.72.144"
 
 scp -r dist/static/*  ${domain2}:/home/o2o/webroot/static/
-scp -r dist/template/*  ${domain2}:/home/o2o/template/
+scp -r dist/template/*  ${domain2}:/home/o2o/ci/phpbase/newviews/templates/
 
 domain="root@115.28.146.162"
 

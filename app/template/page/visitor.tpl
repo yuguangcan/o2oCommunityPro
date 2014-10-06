@@ -45,7 +45,7 @@
 		<div class="m-textarea">
 			<textarea placeholder="备注（选填）" id="other"></textarea>
 		</div>
-		<a href="javascript:;" class="m-submit" id="submit-visitor">提交</a>
+		<a href="javascript:;" class="m-submit disabled" id="submit-visitor">提交</a>
 	</section>
 	<section class="result" id="result">
 		<div class="m-result">

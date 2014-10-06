@@ -23,6 +23,7 @@ $(function(){
             loading: $('.m-loading'),
             template : 'pay_template',
             url : '/community/payment/list',
+            rn : 10,
             data : {
             	type : item.data('type')
             }

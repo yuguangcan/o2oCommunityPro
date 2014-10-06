@@ -4,6 +4,7 @@ $(function(){
         container : $('.public-list'),
         loading: $('.m-loading'),
         template : 'public_template',
-        url : '/community/announce/list'
+        url : '/community/announce/list',
+        rn : 10
     });
 });

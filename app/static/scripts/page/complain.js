@@ -2,10 +2,12 @@
 $(function(){
 	var other = $('#other');
 	$('#submit-complain').click(function(){
-		$.post('/community/complain/operation',{
-			up_mode : 'add',
-			content : other.val(),
-			pro_id : 1
+		if($.trim(other.val()) == "" || $(this).hasClass('disabled')){
+			alert('请输入投诉内容');
+			return;
+		}
+		$.post('/community/complain/add',{
+			content : other.val()
 		},function(resp){
 			if(resp.errNo == 0){
 				$('#submit').hide();
@@ -14,5 +16,13 @@ $(function(){
 				alert('提交错误，请稍后重试');
 			}
 		});
+	});
+	other.on('input',function(e){
+		if($.trim(other.val()) == ""){
+			$('#submit-complain').addClass('disabled');
+		}
+		else{
+			$('#submit-complain').removeClass('disabled');
+		}
 	});
 });
