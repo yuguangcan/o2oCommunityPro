@@ -7,6 +7,12 @@
 {%/block%}
 
 {%block name="css"%}
+<!-- build:css(.tmp) /static/community/styles/widget/mobiscroll.css -->
+<link rel="stylesheet" href="static/styles/widget/mobiscroll/mobiscroll.core-2.5.2.css">
+<link rel="stylesheet" href="static/styles/widget/mobiscroll/mobiscroll.animation-2.5.2.css">
+<link rel="stylesheet" href="static/styles/widget/mobiscroll/mobiscroll.android-ics-2.5.2.css">
+<!-- endbuild -->
+
 <!-- build:css(.tmp) /static/community/styles/page/visitor.css -->
 <link rel="stylesheet" href="static/styles/page/visitor.css">
 <!-- endbuild -->
@@ -22,8 +28,7 @@
 		<div class="m-select" id="dateselect">
 			<span class="notice">时间</span>
 			<span class="arrow"></span>
-			<div class="info">请选择时间</div>
-			<input type="date" id="date"></input>
+			<input type="text" id="date" value="请选择访问时间">
 		</div>
 		<div class="m-select" id="countselect">
 			<span class="notice">人数</span>
@@ -62,6 +67,14 @@
 {%/block%}
 
 {%block name="js"%}
+<!-- build:js /static/community/scripts/widget/mobiscroll.js -->
+<script src="static/scripts/widget/mobiscroll/mobiscroll.zepto.js"></script>
+<script src="static/scripts/widget/mobiscroll/mobiscroll.core-2.5.2.js"></script>
+<script src="static/scripts/widget/mobiscroll/mobiscroll.core-2.5.2-zh.js"></script>
+<script src="static/scripts/widget/mobiscroll/mobiscroll.datetime-2.5.1.js"></script>
+<script src="static/scripts/widget/mobiscroll/mobiscroll.datetime-2.5.1-zh.js"></script>
+<script src="static/scripts/widget/mobiscroll/mobiscroll.android-ics-2.5.2.js"></script>
+<!-- endbuild -->
 <!-- build:js /static/community/scripts/widget/customSelect.js -->
 <script src="static/scripts/widget/customSelect.js"></script>
 <!-- endbuild -->
