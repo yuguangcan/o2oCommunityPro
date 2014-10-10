@@ -5,6 +5,7 @@ function ScrollLoad(options){
     this.loading = options.loading;
     this.pn = 0;
     this.rn = options.rn || 3;
+    this.emptyText = options.emptyText || '暂无内容';
     this.data = options.data || {};
     var _self = this;
     this.loadHandel = function(){
@@ -34,8 +35,13 @@ ScrollLoad.prototype.loadData = function(){
             _self.loading.hide();
             
         }
-        var content = baidu.template(_self.template, {list: data.data.list});
-        _self.container.append(content);
+        if(_self.pn == 0 && data.data.list.length == 0){
+            _self.container.append('<div class="m-empty"><div></div><p>'+_self.emptyText+'</p></div>');
+        }else{
+            var content = baidu.template(_self.template, {list: data.data.list});
+            _self.container.append(content);
+        }
+        
     });
 }
 ScrollLoad.prototype.init = function(){

@@ -30,6 +30,11 @@ $icon-retina: sprite-map("icons/*.png");
 	@include retina-sprite-background(neighbour,$icon-retina);
 	display: inline-block;
 }
+.icon-empty-logo{
+	@include retina-sprite-background(empty-logo,$icon-retina);
+	display: inline-block;
+}
+
 
 
 

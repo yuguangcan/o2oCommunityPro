@@ -5,6 +5,7 @@ $(function(){
         loading: $('.m-loading'),
         template : 'package_template',
         url : '/community/package/packagelist',
-        rn : 10
+        rn : 10,
+        emptyText : '暂无包裹，么么哒'
     });
 });

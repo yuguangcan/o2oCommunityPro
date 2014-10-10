@@ -301,3 +301,16 @@ html,a,input,textarea,.notapcolor{
 		}
 	}
 }
+.m-empty{
+	text-align: center;
+	margin-top: 80px;
+	div{
+		@extend .icon-empty-logo;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 14px;
+		color: #999;
+	}
+	
+}

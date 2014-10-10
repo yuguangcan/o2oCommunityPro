@@ -24,6 +24,7 @@ $(function(){
             template : 'pay_template',
             url : '/community/payment/list',
             rn : 10,
+            emptyText : '暂无费用，么么哒',
             data : {
             	type : item.data('type')
             }
