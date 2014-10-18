@@ -181,7 +181,7 @@
             &.award{
                 background: #ff9434;
             }
-            &.neighbour{
+            &.weidian{
                 background: #f06a9b;
             }
         }
@@ -210,7 +210,7 @@
             &.award{
                 background: #ff9434;
             }
-            &.neighbour{
+            &.weidian{
                 background: #f06a9b;
             }
         }
@@ -240,10 +240,7 @@
             &.life{
                 background: #60c2ef;
             }
-            &.award{
-                background: #ff9434;
-            }
-            &.neighbour{
+            &.weidian{
                 background: #f06a9b;
             }
             tr{
@@ -271,6 +268,64 @@
                 }
             }
         }
+        .award{
+            background: #ff9434;
+            padding: 20px 10px;
+            img{
+                display: block;
+                float: left;
+                width: 125px;
+                height: 125px;
+                -webkit-border-radius:5px 5px;
+                border-radius: 5px 5px;
+            }
+            .info{
+                height: 125px;
+                margin-left: 140px;
+                position: relative;
+                p{
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    &.title{
+                        font-size: 15px;
+                    }
+                }
+                .award-btn{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    background: #fff;
+                    color: #ff9434;
+                    font-size: 14px;
+                    -webkit-border-radius:3px;
+                    border-radius: 3px;
+                }
+                .award-result-btn{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 42px;
+                    text-align: center;
+                    background: #e96e00;
+                    color: #fff;
+                    -webkit-border-radius:3px;
+                    border-radius: 3px;
+                    span{
+                        font-size: 9px;
+                        margin: 5px 10px;
+                    }
+                    .time{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
     }
 }
 .activity{
@@ -279,10 +334,6 @@
             background: #fff;
             border-bottom: 1px solid #e3e3e3;
             padding: 10px 10px;
-            &:last-child{
-                -webkit-border-radius:0 0 5px 5px;
-                border-radius:0 0 5px 5px;
-            }
             .img{
                 display: block;
                 float: left;

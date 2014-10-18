@@ -27,17 +27,13 @@
 	<section class="public">
 		<div id='public-slider' class='swipe'>
 	        <ul class="public-list swipe-wrap">
-	        	{%$i=1%}
                 {%foreach from=$data.announce item=foo%}
-                    {%if $i < 4%}
                     <li>
                     	<a href="/community/announce/listview">
                         	<div class="title">{%$foo.title%}</div>
                         	<p class="info">{%$foo.content%}</p>
                        	</a>
                    	</li>
-                   {%/if%}
-                   {%$i=$i+1%}
                 {%/foreach%}
 	        </ul>
 	    </div>
@@ -100,29 +96,30 @@
 			<div class="quick-icon-wrapper shop">
 				<i class="icon-shop"></i>
 			</div>
-			<p class="quick-incon-text">社区超市</p>
+			<p class="quick-incon-text">超市</p>
 			<span class="quick-arrow shop"></span>
 		</div>
 		<div class="quick-wrapper">
 			<div class="quick-icon-wrapper life">
 				<i class="icon-life"></i>				
 			</div>
-			<p class="quick-incon-text">社区生活</p>
+			<p class="quick-incon-text">折扣</p>
 			<span class="quick-arrow life"></span>
 		</div>
-		<!-- <div class="quick-wrapper">
+		<div class="quick-wrapper">
 			<div class="quick-icon-wrapper award">
 				<i class="icon-award"></i>
 			</div>
-			<p class="quick-incon-text">每日抽奖</p>
+			<p class="quick-incon-text">抽奖</p>
 			<span class="quick-arrow award"></span>
 		</div>
+		<!--
 		<div class="quick-wrapper">
-			<div class="quick-icon-wrapper neighbour">
-				<i class="icon-neighbour"></i>				
+			<div class="quick-icon-wrapper weidian">
+				<i class="icon-weidian"></i>				
 			</div>
-			<p class="quick-incon-text">我的邻居</p>
-			<span class="quick-arrow neighbour"></span>
+			<p class="quick-incon-text">微店</p>
+			<span class="quick-arrow weidian"></span>
 		</div> -->
 	</section>
 
@@ -165,7 +162,6 @@
 		<li>
 			<table class="life">
 				
-
 				{%if $data.lifeTypes|count > 0%}
 					{%assign var=types1 value=$data.lifeTypes|array_slice:0:3%}
 					<tr>
@@ -211,23 +207,40 @@
 				
 			</table>
 		</li>
-		<!-- <li>
-			<table class="award">
-				<tr>
-					<td>
-						<a href="/">食品</a>
-					</td>
-					<td>
-						<a href="/">饮品</a>
-					</td>
-					<td>
-						<a href="/">生活用品</a>
-					</td>
-				</tr>
-			</table>
-		</li>
 		<li>
-			<table class="neighbour">
+			<div class="award">
+				{%if $data.bonusList%}
+					<img src="{%$data.bonusList.img%}">
+					<div class="info">
+						<p class="title">{%$data.bonusList.title%}</p>
+						<p>{%$data.bonusList.detail%}</p>
+						{%if $data.bonusList.status %}
+							<div id="award" class="award-btn" data-id="{%$data.bonusList.activityId%}">每日抽奖</div>
+							<div id="award-result" class="award-result-btn hide">
+								<span>距离下次抽奖</span>
+								<div class="time">00:00:00</div>
+							</div>
+						{%else%}
+							<div id="award" class="award-btn hide" data-id="{%$data.bonusList.activityId%}">每日抽奖</div>
+							<div id="award-result" class="award-result-btn">
+								<span>距离下次抽奖</span>
+								<div class="time" data-time="{%$data.bonusList.remainTime%}">00:00:00</div>
+							</div>
+						{%/if%}
+					</div>
+				{%else%}
+					<img src="/static/community/images/empty.jpg">
+					<div class="info">
+						<p class="title">当前暂无活动</p>
+						<p>敬请期待</p>
+					</div>
+				{%/if%}
+				
+			</div>
+		</li>
+		<!--
+		<li>
+			<table class="weidian">
 				<tr>
 					<td>
 						<a href="/">食品</a>

@@ -26,8 +26,8 @@ $icon-retina: sprite-map("icons/*.png");
 	@include retina-sprite-background(award,$icon-retina);
 	display: inline-block;
 }
-.icon-neighbour{
-	@include retina-sprite-background(neighbour,$icon-retina);
+.icon-weidian{
+	@include retina-sprite-background(weidian,$icon-retina);
 	display: inline-block;
 }
 .icon-empty-logo{
