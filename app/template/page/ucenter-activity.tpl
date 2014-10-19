@@ -20,14 +20,14 @@
 {%block name="content"%}
 	
 	<section class="uarea join">
-		<a href="###">
+		<a href="/community/activity/myjoinview">
 			<p class="title">已报名</p>
 			<i class="arrow icon-arrow"></i>
 		</a>
 	</section>
 
 	<section class="uarea">
-		<a href="###">
+		<a href="/community/activity/mylikeview">
 			<p class="title">已收藏</p>
 			<i class="arrow icon-arrow"></i>
 		</a>
