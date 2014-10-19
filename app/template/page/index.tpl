@@ -15,10 +15,10 @@
 {%block name="header"%}
 	<header class="header" id="header">
 		<div class="logo icon-logo"></div>
-		<div class="info">
+		<a href="/community/ucenter/ucenter" class="info">
 			博雅国际
 			<img src="{%$userInfo.img%}" class="avatar">
-		</div>
+		</a>
 	</header>
 {%/block%}
 
@@ -229,11 +229,7 @@
 						{%/if%}
 					</div>
 				{%else%}
-					<img src="/static/community/images/empty.jpg">
-					<div class="info">
-						<p class="title">当前暂无活动</p>
-						<p>敬请期待</p>
-					</div>
+					<div class="m-empty"><div></div><p>当前暂无活动，敬请期待</p></div>
 				{%/if%}
 				
 			</div>

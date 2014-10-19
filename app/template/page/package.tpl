@@ -29,16 +29,16 @@
 
 	<% for(var i=0;i<list.length;i++){ %>
 	<li>
-		<p><span><%=list[i].recipient%></span>有一个<span><%=list[i].courier%></span>在<span><%=list[i].place%></span>，
+		<p><span>尊敬的<%=list[i].recipient%></span>有一个<span><%=list[i].courier%></span>在<span><%=list[i].place%></span>，
 			<% if(list[i].state==1){ %>
-				<%=list[i].sign%>已签收
+				<%=list[i].sign%>已签收。
 			<% }else{ %>
-				请及时签收
+				请及时签收。
 			<% } %>
+			（领取验证码：<span><%=list[i].validation%></span>）
 		</p>
 		<div class="info clearfix">
 			<div class="time"><%=list[i].add_time%></div>
-			<div class="code">验证码：<%=list[i].validation%></div>
 		</div>
 	</li>
 	<% } %>

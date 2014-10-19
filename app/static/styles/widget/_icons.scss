@@ -34,7 +34,22 @@ $icon-retina: sprite-map("icons/*.png");
 	@include retina-sprite-background(empty-logo,$icon-retina);
 	display: inline-block;
 }
-
+.icon-arrow{
+	@include retina-sprite-background(arrow,$icon-retina);
+	display: inline-block;
+}
+.icon-u-shop{
+	@include retina-sprite-background(u-shop,$icon-retina);
+	display: inline-block;
+}
+.icon-u-wuye{
+	@include retina-sprite-background(u-wuye,$icon-retina);
+	display: inline-block;
+}
+.icon-u-activity{
+	@include retina-sprite-background(u-activity,$icon-retina);
+	display: inline-block;
+}
 
 
 

@@ -60,7 +60,7 @@
                         alert("很遗憾您没中奖");
                     }
                     $('#award').addClass('hide');
-                    $('#award-result').find('time').attr('data-time',resp.data.remainTime).removeClass('hide');
+                    $('#award-result').find('.time').attr('data-time',resp.data.remainTime);
                     initTimeCountDown();
                 }else{
                     alert(resp.errStr);
@@ -85,6 +85,7 @@
                 m = m<10?('0'+m):m;
                 s = s<10?('0'+s):s;
                 timeDom.html(h+':'+m+':'+s).data('time',t-1);
+                $('#award-result').removeClass('hide');
             },1000);
         }
         if($('#award-result') && !$('#award-result').hasClass('hide')){

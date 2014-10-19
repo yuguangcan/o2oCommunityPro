@@ -1,0 +1,97 @@
+.uinfo{
+	background: #60c2ef;
+	padding: 10px 10px 20px;
+	.avatar{
+		width: 58px;
+		height: 58px;
+		border: 2px solid #fff;
+		-webkit-border-radius:60px;
+		border-radius: 60px;
+		display: block;
+		margin: 0 auto;
+	}
+	.name{
+		text-align: center;
+		font-size: 15px;
+		color: #fff;
+		margin: 10px 0 15px;
+	}
+	.detail{
+		border-top: 1px solid rgba(255,255,255,0.8);
+		padding-top: 15px;
+		span{
+			color: #fff;
+			font-size: 12px;
+			margin-right: 20px;
+		}
+	}
+}
+.uarea{
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	-webkit-border-radius:5px 5px;
+	border-radius: 5px 5px;
+	margin: 12px 15px;
+	position: relative;
+	height: 75px;
+	line-height: 75px;
+	.icon{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		vertical-align: middle;
+		text-align: center;
+		-webkit-border-radius:48px;
+		border-radius:48px;
+		margin: 10px 10px;
+	}
+	.title{
+		display: inline-block;
+		font-size: 16px;
+		color: #333;
+	}
+	.arrow{
+		position: absolute;
+		right: 15px;
+		top: 28px;
+	}
+}
+.shop{
+	height: auto;
+	.shop-entrance{
+		height: 75px;
+		line-height: 75px;
+		i{
+			position: relative;
+			top: -7px;
+		}
+	}
+	.icon{
+		background: #5ccc9f;
+	}
+}
+.shop-list{
+	border-top: 1px solid #e1e1e1;
+	margin-left: 67px;
+	height: 45px;
+	line-height: 45px;
+	a{
+		font-size: 14px;
+		color: #333;
+		margin-right: 5px;
+	}
+}
+.wuye{
+	.icon{
+		background: #60c2ef;
+	}
+}
+.activity{
+	.icon{
+		background: #d381e2;
+	}
+	.icon-u-activity{
+		position: relative;
+		top: -7px;
+	}
+}
