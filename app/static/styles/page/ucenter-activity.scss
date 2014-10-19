@@ -1,13 +1,14 @@
 .uarea{
 	background: #fff;
 	border: 1px solid #e1e1e1;
-	-webkit-border-radius:5px 5px;
-	border-radius: 5px 5px;
 	margin: 0px 15px;
 	padding-left: 20px;
 	position: relative;
 	height: 75px;
 	line-height: 75px;
+	a{
+		display: block;
+	}
 	.title{
 		display: inline-block;
 		font-size: 16px;
@@ -21,4 +22,11 @@
 }
 .join{
 	margin-top: 12px;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 0;
+}
+.like{
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
 }

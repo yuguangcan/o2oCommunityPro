@@ -44,7 +44,7 @@
 	</section>
 
 	<section class="uarea wuye">
-		<a href="###">
+		<a href="/community/ucenter/property">
 			<div class="icon">
 				<i class="icon-u-wuye"></i>
 			</div>
@@ -54,7 +54,7 @@
 	</section>
 
 	<section class="uarea activity">
-		<a href="###">
+		<a href="/community/ucenter/activity">
 			<div class="icon">
 				<i class="icon-u-activity"></i>
 			</div>

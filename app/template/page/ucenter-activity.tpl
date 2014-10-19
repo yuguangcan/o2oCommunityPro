@@ -26,7 +26,7 @@
 		</a>
 	</section>
 
-	<section class="uarea">
+	<section class="uarea like">
 		<a href="/community/activity/mylikeview">
 			<p class="title">已收藏</p>
 			<i class="arrow icon-arrow"></i>

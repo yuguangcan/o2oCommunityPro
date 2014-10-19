@@ -2,13 +2,19 @@
 	li{
 		padding:17px 15px 17px 20px;
 		border-bottom: 1px solid #dad9d5;
+		div{
+			position: relative;
+		}
 		.title{
 			float: left;
 			font-size: 17px;
 			color: #333;
+			margin-right: 70px;
 		}
 		.acount{
-			float: right;
+			position: absolute;
+			right: 0;
+			top:3px;
 			font-size: 14px;
 			color: #999;
 		}
