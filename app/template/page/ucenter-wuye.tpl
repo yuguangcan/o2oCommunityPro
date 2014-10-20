@@ -41,21 +41,21 @@
 	</section>
 
 	<section class="uarea">
-		<a href="###">
+		<a href="/community/ucenter/myvisitorview">
 			<p class="title">我的访客</p>
 			<i class="arrow icon-arrow"></i>
 		</a>
 	</section>
 
 	<section class="uarea">
-		<a href="###">
+		<a href="/community/ucenter/myrepairview">
 			<p class="title">我的报修</p>
 			<i class="arrow icon-arrow"></i>
 		</a>
 	</section>
 
 	<section class="uarea complain">
-		<a href="###">
+		<a href="/community/ucenter/mycomplainview">
 			<p class="title">我的投诉</p>
 			<i class="arrow icon-arrow"></i>
 		</a>

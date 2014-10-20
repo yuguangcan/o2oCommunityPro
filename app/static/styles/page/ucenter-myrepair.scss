@@ -1,0 +1,23 @@
+.repair-list{
+	margin-top: 10px;
+	li{
+		padding: 20px 15px 12px;
+		border-bottom: 1px solid #e2e2e2;
+		p{
+			font-size: 16px;
+			color: #333;
+			span{
+				color: #fe9e62;
+			}
+		}
+		.info{
+			margin-top: 10px;
+			color: #ccc;
+			font-size: 12px;
+			.time{
+				float: left;
+			}
+		}
+	}
+
+}
