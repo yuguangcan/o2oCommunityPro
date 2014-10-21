@@ -40,6 +40,11 @@
         {%block name="popup"%}
         {%/block%}
 
+        <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F27e2808199f268d915bccc777f9b7292' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        
         <!-- build:js /static/community/scripts/base/zepto.js -->
         <script src="static/scripts/base/zepto.js"></script>
         <!-- endbuild -->
