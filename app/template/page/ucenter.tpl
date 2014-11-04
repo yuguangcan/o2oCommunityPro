@@ -19,13 +19,13 @@
 
 {%block name="content"%}
 	<section class="uinfo">
-		<img src="" class="avatar">
-		<p class="name">测试用户</p>
+		<img src="{%$userInfo.img%}" class="avatar">
+		<p class="name">{%$userInfo.uname%}</p>
 		<div class="detail">
 			<span>激活方式：二维码</span>
-			<span>社区积分：2358</span>
+			<span>社区积分：{%$userInfo.uscore%}</span>
 			<span>状态：住户身份</span>
-			<span>激活住址：2358</span>
+			<span>激活住址：{%$userInfo.ext.communityName%}{%$userInfo.ext.buildingName%}{%$userInfo.ext.roomName%}</span>
 		</div>
 	</section>
 	
