@@ -2,9 +2,10 @@
 #地址
 
 
-# cp -r dist/static/*  /Users/yuguangcan/webserver/php/static/
-# cp -r dist/template/*  /Users/yuguangcan/webserver/php/community/templates/
+domain="o2o@115.28.208.154"
 
+scp -r dist/static/*  ${domain}:/home/o2o/webroot/static/
+scp -r dist/template/*  ${domain}:/home/o2o/ci/phpbase/newviews/templates/
 
 domain2="o2o@112.126.72.144"
 

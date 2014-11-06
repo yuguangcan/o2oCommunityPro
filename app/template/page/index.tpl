@@ -260,6 +260,15 @@
 	</div>
 {%/block%}
 
+{%block name="popup"%}
+	<div id="award-popup" class="m-popup">
+		<div class="popup-overlay"></div>
+		<div class="popup-award icon-award-bg">
+			<div id="award-text" class="award-text"></div>
+		</div>
+	</div>
+{%/block%}
+
 {%block name="js"%}
 <script id="activity_template" type="text/html">
 

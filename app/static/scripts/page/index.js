@@ -51,11 +51,15 @@
         });
 
         //抽奖
+        $('#award-popup').click(function(){
+            $(this).hide();
+        });
         $('#award').click(function(){
             $.get('/community/lucky/draw?activity_id='+$(this).data('id'),function(resp){
                 if(resp.errNo == 0){
                     if(resp.data.result){
-                        alert("恭喜您获得"+resp.data.prize.prizeName);
+                        $('#award-text').html(resp.data.prize.prizeName);
+                        $('#award-popup').show();
                     }else{
                         alert("很遗憾您没中奖");
                     }

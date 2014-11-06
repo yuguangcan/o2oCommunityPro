@@ -50,6 +50,10 @@ $icon-retina: sprite-map("icons/*.png");
 	@include retina-sprite-background(u-activity,$icon-retina);
 	display: inline-block;
 }
+.icon-award-bg{
+	@include retina-sprite-background(award-bg,$icon-retina);
+	display: inline-block;
+}
 
 
 
