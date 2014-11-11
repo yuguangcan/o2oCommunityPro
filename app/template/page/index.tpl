@@ -16,7 +16,7 @@
 	<header class="header" id="header">
 		<div class="logo icon-logo"></div>
 		<a href="/community/ucenter/ucenter" class="info">
-			博雅国际
+			{%$userInfo.ext.communityName%}
 			<img src="{%$userInfo.img%}" class="avatar">
 		</a>
 	</header>

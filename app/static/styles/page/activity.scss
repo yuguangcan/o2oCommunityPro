@@ -63,6 +63,19 @@ body{
 .result{
 	display: none;
 	margin-top: 34px;
+	.uavatar{
+		width: 45px;
+		height: 45px;
+		margin: 10px;
+		float: left;
+		img{
+			border: 1px solid #fff;
+			-webkit-border-radius:45px;
+			border-radius:45px;
+			display: block;
+		}
+		
+	}
 }
 .m-submit{
 	margin: 0px 15px;

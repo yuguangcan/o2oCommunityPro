@@ -46,9 +46,8 @@
 		<div class="m-result">
 			<h3>报名成功</h3>
 			<p>已经成功报名的邻居</p>
-			<div class="panel clearfix">
-				
-			</div>
+			<ul class="panel clearfix">
+			</ul>
 			<a href="javascript:;" class="m-submit">分享到朋友圈</a>
 		</div>
 		
