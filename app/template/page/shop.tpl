@@ -41,7 +41,7 @@
     <div class="address">{%$data.detail.address%}</div>
     <div class="tel">TEL:<a href="tel:{%$data.detail.phone%}">{%$data.detail.phone%}</a></div>
     <div class="des">
-        <h2>推荐理由：</h2>
+        <h2>优惠信息：</h2>
         <p>{%$data.detail.detail%}</p>
     </div>
 {%/block%}

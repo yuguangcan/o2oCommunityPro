@@ -39,7 +39,7 @@
             <div class="info">
                 <p class="title"><%=list[i].title%></p>
                 <div class="price">
-                    <span>人均 ￥<%=list[i].cost%></span>
+                    <span>电话 <%=list[i].phone%></span>
                     <div class="discount">
                         <% if(list[i].isDiscount) { %>
                         <i class="zhe">折</i>
