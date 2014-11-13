@@ -1,9 +1,9 @@
-{%*附近美食*%}
+{%*附近商店*%}
 
 {%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
-附近美食
+{%$data.detail.typeName%}
 {%/block%}
 
 {%block name="css"%}
@@ -13,7 +13,7 @@
 {%/block%}
 
 {%block name="header"%}
-    {%include file="community/widget/header.tpl" headertitle="附近美食"%}
+    {%include file="community/widget/header.tpl" headertitle="{%$data.detail.typeName%}"%}
 {%/block%}
 
 

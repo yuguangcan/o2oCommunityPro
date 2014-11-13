@@ -48,7 +48,7 @@
 			<p>已经成功报名的邻居</p>
 			<ul class="panel clearfix">
 			</ul>
-			<a href="javascript:;" class="m-submit">分享到朋友圈</a>
+			<!-- <a href="javascript:;" class="m-submit">分享到朋友圈</a> -->
 		</div>
 		
 	</section>

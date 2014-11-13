@@ -53,19 +53,22 @@
 		<table>
 			<tr>
 				<td>
-					<a href="/community/payment/listview">物业缴费</a>
+					<!-- <a href="/community/payment/listview">物业缴费</a> -->
+					<a href="javascript:;" style="color:#ccc;">物业缴费</a>
 					<!-- {%if $data.remind.payment%}
 						<i class="notice">{%$data.remind.payment%}</i>
 					{%/if%} -->
 				</td>
 				<td>
-					<a href="/community/package/package">包裹代收</a>
+					<!-- <a href="/community/package/package">包裹代收</a> -->
+					<a href="javascript:;" style="color:#ccc;">包裹代收</a>
 					<!-- {%if $data.remind.package%}
 						<i class="notice">{%$data.remind.package%}</i>
 					{%/if%} -->
 				</td>
 				<td>
-					<a href="/community/visitor/visitor">访客预约</a>
+					<!-- <a href="/community/visitor/visitor">访客预约</a> -->
+					<a href="javascript:;" style="color:#ccc;">访客预约</a>
 					<!-- {%if $data.remind.visitor%}
 						<i class="notice">{%$data.remind.visitor%}</i>
 					{%/if%} -->
@@ -73,13 +76,15 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="/community/repair/listview">物业报修</a>
+					<!-- <a href="/community/repair/listview">物业报修</a> -->
+					<a href="javascript:;" style="color:#ccc;">物业报修</a>
 					<!-- {%if $data.remind.repair%}
 						<i class="notice">{%$data.remind.repair%}</i>
 					{%/if%} -->
 				</td>
 				<td>
-					<a href="/community/complain/listview">投诉建议</a>
+					<!-- <a href="/community/complain/listview">投诉建议</a> -->
+					<a href="javascript:;" style="color:#ccc;">投诉建议</a>
 					<!-- {%if $data.remind.complain%}
 						<i class="notice">{%$data.remind.complain%}</i>
 					{%/if%} -->
@@ -128,33 +133,24 @@
 			<table class="shop">
 				<tr>
 					<td>
-						<a href="/shop/home?type=101010">食品</a>
+						<a href="/shop/home?type=101010">方便熟食</a>
 					</td>
 					<td>
 						<a href="/shop/home?type=111010">饮品</a>
 					</td>
 					<td>
-						<a href="/shop/home?type=121010">生活用品</a>
+						<a href="/shop/home?type=121010">零食</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="/shop/home?type=141010">水果生鲜</a>
+						<a href="/shop/home?type=131010">粮油调味</a>
 					</td>
 					<td>
-						<a href="/shop/home?type=151010">创意办公</a>
+						<a href="/shop/home?type=141010">生活日用</a>
 					</td>
 					<td>
-						<a href="/shop/home?type=171010">母婴宠物</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/shop/home?type=251010">活动专区</a>
-					</td>
-					<td>
-					</td>
-					<td>
+						<a href="/shop/home?type=151010">活动专区</a>
 					</td>
 				</tr>
 			</table>
@@ -170,7 +166,7 @@
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
 						{%/foreach%}
-						{%$left1=4-$types1|count%}
+						{%$left1=3-$types1|count%}
 						{%foreach $left1 as $item%}
 							<td></td>
 						{%/foreach%}
@@ -184,7 +180,7 @@
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
 						{%/foreach%}
-						{%$left2=4-$types2|count%}
+						{%$left2=3-$types2|count%}
 						{%foreach $left2 as $item%}
 							<td></td>
 						{%/foreach%}
@@ -198,7 +194,7 @@
 							<a href="/community/local/life?typeId={%$type.typeId%}">{%$type.typeName%}</a>
 						</td>
 						{%/foreach%}
-						{%$left3=4-$types3|count%}
+						{%$left3=3-$types3|count%}
 						{%foreach $left3 as $item%}
 							<td></td>
 						{%/foreach%}
